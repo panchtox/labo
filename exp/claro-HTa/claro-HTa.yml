@@ -14,7 +14,7 @@ experiment:
   tags: [ "termonuclear" ]
   description: "la salsa magica extra_trees"
 
-  requires:   [ "claro-TSa" ]
+  requires:   [ "termonuclear-TSa" ]
 
 
 param:

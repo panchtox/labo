@@ -15,7 +15,7 @@ experiment:
   tags: [ "termonuclear" ]
   description: "del  AsignarNA"
 
-  requires:   [ "termonuclear-HTa" ]
+  requires:   [ "ahyaentendi-HTa" ]
 
 param:
   semilla_primos:  102191 #poner aqui una semilla propia, sirve para crear los numeros primos que seran semillas
