@@ -14,7 +14,7 @@ experiment:
   tags: [ "termonuclear" ]
   description: "la salsa magica extra_trees"
 
-  requires:   [ "termonuclear-TSa" ]
+  requires:   [ "claro-TSa" ]
 
 
 param:
@@ -36,11 +36,11 @@ param:
  #los parametros que son un solo valor  NO van a la B.O. y se pasan fijos
   lightgbm:
 
-    learning_rate:      [ 0.02,  0.10 ]
-    feature_fraction:   [ 0.2,   1.0  ]
+    num_leaves:         [  10,   500, "integer" ]
+    min_data_in_leaf:   [ 100,  2000, "integer" ]
 
-    num_leaves:          100         # achtung
-    min_data_in_leaf:   1000         # achtung
+    learning_rate:      0.05         #lo dejo fijo
+    feature_fraction:   0.5          #lo dejo fijo
 
     extra_trees: TRUE                #fundamental que sea TRUE
 
